@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ریاضی هفتم | فصل اول</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h1>📚 ریاضی هفتم</h1>
+            <p>آموزش • تمرین • آزمون</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <!-- صفحه اصلی -->
+        <section id="home" class="welcome box">
+
+            <h2>به سایت ریاضی هفتم خوش آمدید 👋</h2>
+
+            <p>
+                این سایت برای یادگیری و تمرین ریاضی هفتم ساخته شده است.
+                در حال حاضر فصل اول فعال است.
+            </p>
+
+            <div class="chapters">
+
+                <div class="chapter active">
+
+                    <div class="chapter-number">
+                        فصل ۱
+                    </div>
+
+                    <h2>راهبردهای حل مسئله</h2>
+
+                    <p>
+                        با راهبردهای مختلف حل مسئله آشنا شوید،
+                        تمرین کنید و در آزمون شرکت کنید.
+                    </p>
+
+                    <button onclick="openChapter(1)">
+                        ورود به فصل ۱
+                    </button>
+
+                </div>
+
+                <div class="chapter disabled">
+
+                    <div class="chapter-number">
+                        فصل ۲
+                    </div>
+
+                    <h2>عددهای صحیح</h2>
+
+                    <p>
+                        این فصل در حال آماده‌سازی است.
+                    </p>
+
+                    <button disabled>
+                        به‌زودی
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- صفحه آزمون -->
+        <section id="exam" class="box hidden">
+
+            <div class="exam-header">
+
+                <span id="questionNumber">
+                    سؤال ۱ از ۱۰
+                </span>
+
+                <span id="timer">
+                    10:00
+                </span>
+
+            </div>
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <h2 id="question"></h2>
+
+            <div id="answers"></div>
+
+            <button id="nextButton" class="next-button" onclick="nextQuestion()">
+                سؤال بعدی
+            </button>
+
+        </section>
+
+
+        <!-- صفحه نتیجه -->
+        <section id="result" class="box hidden">
+
+            <h2>🎉 آزمون تمام شد!</h2>
+
+            <div class="score">
+
+                <p id="score"></p>
+                <p id="percent"></p>
+                <p id="correct"></p>
+                <p id="wrong"></p>
+
+            </div>
+
+            <h3>❌ سؤال‌هایی که اشتباه زدی:</h3>
+
+            <div id="wrongQuestions"></div>
+
+            <button class="restart-button" onclick="restartExam()">
+                🔄 آزمون مجدد
+            </button>
+
+            <button class="home-button" onclick="goHome()">
+                🏠 بازگشت به صفحه اصلی
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>
+            ساخته شده برای پروژه ریاضی هفتم 🖤
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
